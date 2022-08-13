@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*-------------------------navigation------------------------*/
 
 .navigation{
     width: 1440px;
@@ -148,12 +149,157 @@
 }
 .discount-Row{
     display: flex;
-    justify-content: space-around;
 }
 .discount-col1{
-    width: 40%;
+    width: 45%;
+
+}
+.discount-col1 img{
+    padding-left: 48px;
 }
 .discount-col2{
-    width: 40%;
+    width: 30%;
+    height: 500px;
     text-align: center;
+    padding-left: 10px;
+}
+.discount-Col2 h2{
+   padding: 50px;
+   color: #e1b838;
+   font-size: 50px;
+}
+.discount-logo{
+ padding: 50px;
+}
+.discount-text{
+    text-align: center;
+    padding-left: 50px;
+}
+.btn-1{
+    padding: 10px 20px;
+    background-color: #e1b838;
+    color: #262626;
+    border: none;
+    font-size: 14px;
+}
+
+/*-------------------------Footer section------------------------------------------*/
+.footer-sec{
+    width: 1440px;
+    height: 730px;
+    background-color: #262626;
+}
+.footer-row1{
+    text-align: center;
+    padding-top: 130px;
+
+}
+.footer-row1 h2{
+    padding: 20px;
+    color: #e1b838;
+    font-size: 40px;
+}
+
+.footer-row2{
+    display: flex;
+    justify-content: space-around;
+}
+.date-col{
+    width: 40%;
+}
+.date-col h4{
+    color: white;
+    padding: 50px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+.links-col{
+    width: 40%;
+}
+.opening{
+    width: 400px;
+    height: 150px;
+    border: 3px solid #e1b838;
+    margin-left: 60px;
+}
+.opening h3{
+    background-color: #e1b838;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+}
+.opening p{
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.col-row{
+    display: flex;
+}
+.col-col{
+    width: 20%;
+    padding: 15px 20px;
+}
+.col-col ul li{
+    list-style: none;
+}
+.col-col ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+   
+}
+
+/*--------------fonts------------------*/
+.fonts{
+    padding: 30px;
+   
+}
+
+ .fa-brands{
+    color: #e1b838;
+    background-color: #262626;
+    font-size: 30px;
+    padding: 0px 15px;
+ }
+ .fonts span{
+    font-size: 20px;
+    color: #e1b838;
+ }
+
+ /*--------------------Media Query---------------------------*/
+ /*------------mob------------------*/
+only screen and (min-width: 480px)
+
+/*----------------Tablet-----------------*/
+@media only screen and (min-width: 768px) {
+    .nav-row{
+        display: flex;
+        flex-direction: row;
+
+        
+    }
+}
+
+/*-------------desktop------------------*/
+only screen and (min-width: 992px){
+
+}
+@media only screen and (max-width:480px){
+    .nav-row{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+    
+        
+    }
+    .nav-links{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+
+    }
 }
